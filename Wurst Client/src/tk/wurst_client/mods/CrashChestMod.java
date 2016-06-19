@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 - 2016 | Wurst-Imperium | All rights reserved.
+ * Copyright Â© 2014 - 2016 | Wurst-Imperium | All rights reserved.
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -27,7 +27,7 @@ public class CrashChestMod extends Mod
 		if(mc.thePlayer.inventory.getStackInSlot(36) != null)
 		{
 			if(mc.thePlayer.inventory.getStackInSlot(36).getDisplayName()
-				.equals("§6§lCOPY ME"))
+				.equals("Â§6Â§lCOPY ME"))
 				wurst.chat.error("You already have a CrashChest.");
 			else
 				wurst.chat.error("Please take off your shoes.");
@@ -47,7 +47,7 @@ public class CrashChestMod extends Mod
 		nbtTagCompound.setTag("www.wurst-client.tk", nbtList);
 		stack.setTagInfo("www.wurst-client.tk", nbtTagCompound);
 		mc.thePlayer.getInventory()[0] = stack;
-		stack.setStackDisplayName("§6§lCOPY ME");
+		stack.setStackDisplayName("Â§6Â§lChest");
 		wurst.chat.message("A CrashChest was placed in your shoes slot.");
 		setEnabled(false);
 	}
